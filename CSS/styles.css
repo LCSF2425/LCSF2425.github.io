@@ -346,3 +346,138 @@ footer p a {
     }
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-us {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.image-left {
+    width: 35%;
+    margin-right: 30px;
+}
+
+.image-left img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.text-right {
+    width: 60%;
+}
+
+.text-right h1, .text-right h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.text-right p {
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.text-right ul {
+    list-style-type: square;
+    padding-left: 20px;
+    color: #333;
+}
+
+.text-right ul li {
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5ea299;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #4c8278;
+}
+
+@media (max-width: 768px) {
+    .about-us {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-left {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .text-right {
+        width: 100%;
+    }
+}
+
+#about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Section styling for the different content blocks */
+.about-section {
+    margin-bottom: 40px;
+}
+
+/* Headings for each section */
+.about-section h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Paragraph text styling */
+.about-section p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Rounded image styling */
+.about-section img.round {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 35%;
+    margin-right: 30px;
+}
+
+/* List styling */
+.about-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #333;
+}
+
+.about-section ul li {
+    margin-bottom: 10px;
+}
+
