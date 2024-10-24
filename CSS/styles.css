@@ -289,9 +289,9 @@ footer p a {
 }
 
 /* Media Query for Large Desktop Viewport */
-@media screen and (min-width: 1921px){
+@media screen and (min-width: 1024px){
     #container {
-        width: 1920 px;
+        width: 1024 px;
         margin: 0 auto;
     }
 }
@@ -307,15 +307,24 @@ footer p a {
 }
 
 
+/* Clearfix for container */
+.content-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .content-container {
     padding: 20px;
-    overflow: hidden; 
+    overflow: hidden;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
 .image-left {
-    float: left; 
-    width: 30%; 
-    text-align: center; 
+    float: left;
+    width: 30%;
+    text-align: center;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
 .image-left img {
@@ -330,9 +339,21 @@ footer p a {
     margin-left: 20px;
     text-align: left;
     margin-top: 30px;
-    
+    box-sizing: border-box; /* Ensure padding/margins don't affect width */
 }
 
+/* For screens between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .content-container {
+        text-align: center; /* Center content on small screens */
+    }
+    .image-left, .text-right {
+        width: 100%; /* Full width on small screens */
+        margin: 20px 0; /* Adds margin between elements */
+    }
+}
+
+/* Mobile view */
 @media (max-width: 768px) {
     .content-container {
         text-align: center; /* Center content on small screens */
@@ -345,6 +366,7 @@ footer p a {
         margin: 20px 0; /* Adds margin between elements */
     }
 }
+
 
 * {
     box-sizing: border-box;
