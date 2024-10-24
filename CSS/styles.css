@@ -14,12 +14,12 @@ body, header, nav, main, footer, h1, div, img, ul {
 
 /* Style rules for body and images */ 
 body {
-    background-color: 	#000000; 
+    background-color: 	#ffffff; 
 }
 
 img {
     max-width: 100%;
-    display: block;
+    /* display: block; */
 }
 
 /* Style rules for mobile viewport */
@@ -28,7 +28,7 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 header img {
@@ -47,9 +47,9 @@ nav ul {
 }
 
 nav li {
-    font-size: 1.7em;
+    font-size: 1.5em;
     font-family: "Francois One", sans-serif;
-    border-top : 1px solid #fff;
+    border-top : 1px solid #000000;
 }
 
 nav li:first-child {
@@ -58,7 +58,7 @@ nav li:first-child {
 
 nav li a {
     display: block;
-    color: #ffffff;
+    color: #000000;
     padding: 0.5em 1em;
     text-decoration: none;
 }
@@ -102,15 +102,21 @@ main {
 
 
 /* Style rules for footer content */
+
+footer{
+
+    background-color: #5ea299;
+    padding: 15px 0;
+}
 footer p {
     font-size: 0.75em;
     text-align: center;
-    color: #fff;
+    color: #000000;
     padding: 0 1em;
 }
 
 footer p a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -126,7 +132,7 @@ footer p a {
 
 .action {
     font-size: 1.35em;
-    color: #666600;
+    color: #5ea299;
     font-weight: bold;
 }
 
@@ -184,7 +190,7 @@ footer p a {
     }
  
     nav li a{
-        padding: 0.1em 0.75em;
+        padding: 0.5em 1.3em;
     }
 
     /* Tablet Viewport: Style rules for main content area */
@@ -237,7 +243,7 @@ footer p a {
     nav{
         float: right;
         width: 70%;
-        margin: 4em 1em 0 0;
+        margin: 1.8em 0.2em 0 0;
 
     }
     
@@ -256,8 +262,8 @@ footer p a {
     }
 
     nav li a:hover{
-        color: #000;
-        background-color: #fff;
+        color: #ffffff;
+        background-color: #000000;
     }
 
     /* Desktop Viewport: Style Rules for main content */
@@ -299,3 +305,44 @@ footer p a {
     }
 
 }
+
+
+.content-container {
+    padding: 20px;
+    overflow: hidden; 
+}
+
+.image-left {
+    float: left; 
+    width: 30%; 
+    text-align: center; 
+}
+
+.image-left img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.text-right {
+    float: right;
+    width: 65%;
+    margin-left: 20px;
+    text-align: left;
+    margin-top: 30px;
+    
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        text-align: center; /* Center content on small screens */
+    }
+
+    .image-left, .text-right {
+        float: none; /* Remove float for mobile view */
+        width: 100%; /* Full width on small screens */
+        display: block; /* Stack elements vertically */
+        margin: 20px 0; /* Adds margin between elements */
+    }
+}
+
