@@ -31,13 +31,17 @@ header {
     background-color: #ffffff;
 }
 
+p {
+    text-align: justify;
+}
+
 header img {
     margin: 0 auto;
 }
 
  /* Style for rules for navigation area */
 nav {
-    padding: 1%;
+    padding: 2%;
     margin-bottom: 1%;
 }
 
@@ -47,7 +51,7 @@ nav ul {
 }
 
 nav li {
-    font-size: 1.5em;
+    font-size: 1.1em;
     font-family: "Francois One", sans-serif;
     border-top : 1px solid #000000;
 }
@@ -243,7 +247,7 @@ footer p a {
     nav{
         float: right;
         width: 70%;
-        margin: 1.8em 0.2em 0 0;
+        margin: 2em 0.2em 0 0;
 
     }
     
@@ -340,6 +344,7 @@ footer p a {
     text-align: left;
     margin-top: 30px;
     box-sizing: border-box; /* Ensure padding/margins don't affect width */
+    color: black;
 }
 
 /* For screens between 768px and 1024px */
@@ -350,6 +355,7 @@ footer p a {
     .image-left, .text-right {
         width: 100%; /* Full width on small screens */
         margin: 20px 0; /* Adds margin between elements */
+        color: black;
     }
 }
 
@@ -364,6 +370,7 @@ footer p a {
         width: 100%; /* Full width on small screens */
         display: block; /* Stack elements vertically */
         margin: 20px 0; /* Adds margin between elements */
+        color: #000;
     }
 }
 
@@ -405,14 +412,13 @@ footer p a {
 }
 
 .text-right h1, .text-right h2 {
-    color: #333;
+    color: black;
     margin-bottom: 20px;
 }
 
 .text-right p {
-    color: #555;
+    color: black;
     margin-bottom: 20px;
-    line-height: 1.6;
 }
 
 .text-right ul {
@@ -471,7 +477,7 @@ footer p a {
 /* Headings for each section */
 .about-section h1 {
     font-size: 2em;
-    color: #333;
+    color: #5ea299;
     margin-bottom: 20px;
 }
 
@@ -496,10 +502,59 @@ footer p a {
 .about-section ul {
     list-style-type: disc;
     padding-left: 20px;
-    color: #333;
+    color: #5ea299;
 }
 
 .about-section ul li {
     margin-bottom: 10px;
+}
+
+
+.content-block {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #5ea299;
+    margin-bottom: 1rem;
+}
+
+/* Team Section */
+.team-member {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+/* Products */
+.product {
+    margin-bottom: 1.5rem;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.product h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+.intro-text {
+    text-align: justify;
 }
 
