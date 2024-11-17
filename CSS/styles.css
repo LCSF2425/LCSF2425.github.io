@@ -316,12 +316,14 @@ footer p a {
     content: "";
     display: table;
     clear: both;
+    text-align: center;
 }
 
 .content-container {
     padding: 20px;
     overflow: hidden;
     box-sizing: border-box; /* Ensure padding doesn't affect width */
+    text-align: center;
 }
 
 .image-left {
@@ -341,10 +343,11 @@ footer p a {
     float: right;
     width: 65%;
     margin-left: 20px;
-    text-align: left;
-    margin-top: 30px;
+    text-align: center;
+    margin: 30px auto;
     box-sizing: border-box; /* Ensure padding/margins don't affect width */
     color: black;
+    align-content: center;
 }
 
 /* For screens between 768px and 1024px */
@@ -558,3 +561,95 @@ h2 {
     text-align: justify;
 }
 
+.specials-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.special-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.special-item h2 {
+    color: #333;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.special-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+.buy-now {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.buy-now:hover {
+    background-color: #555;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.faq-item h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .faq-container {
+        padding: 15px;
+    }
+
+    .faq-item h2 {
+        font-size: 16px;
+    }
+
+    .faq-item p {
+        font-size: 14px;
+    }
+}
