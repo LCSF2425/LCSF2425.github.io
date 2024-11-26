@@ -1,0 +1,95 @@
+
+/* .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.about-image {
+
+    object-fit: cover;
+    max-width: 40%;
+
+}
+
+.content-wrapper p {
+    
+    text-align: left;
+    color: #555;
+    font-size: 20.24px;
+}
+.about-container h1 {
+    color: #5ea299;
+} */
+
+
+/* General styling */
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Adjust spacing between elements */
+    margin-top: 40px; /* Add space above each section */
+    margin-bottom: 40px; /* Add space below each section */
+    /* flex-wrap: wrap; Allow items to wrap for smaller screens */
+}
+
+.about-image {
+    object-fit: cover;
+    max-width: 40%; /* Default for larger screens */
+}
+
+.content-wrapper p {
+    text-align: left;
+    color: #555;
+    font-size: 20.24px;
+}
+
+.about-container h1 {
+    color: #5ea299;
+    margin-top: 40px; /* Add space above headings */
+    margin-bottom: 20px; /* Add space below headings */
+}
+
+/* Mobile-specific styling */
+@media screen and (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center align text for readability */
+    }
+
+    .about-image {
+        max-width: 80%; /* Make images larger on smaller screens */
+        margin: 0 auto; /* Center the image */
+    }
+
+    .content-wrapper p {
+        font-size: 16px; /* Adjust font size for readability */
+        padding: 0 10px; /* Add some padding for better spacing */
+    }
+
+    .about-container h1 {
+        font-size: 24px; /* Adjust heading size */
+    }
+
+    .tablet-desktop {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content-wrapper p {
+        font-size: 1.1em;
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .about-container h1 {
+        font-size: 20px; /* Smaller heading for very small screens */
+    }
+    .about-section p{
+        text-align: left;
+    }
+}

@@ -517,6 +517,7 @@ footer p a {
     margin-bottom: 10px;
 }
 
+/* our Team screen */
 
 .content-block {
     padding: 2rem;
@@ -534,41 +535,7 @@ h2 {
     margin-bottom: 1rem;
 }
 
-/* Team Section */
-.team-member {
-    margin-bottom: 1.5rem;
-    text-align: center;
-}
-.team-member h3{
-    color: #5ea299;
-}
-
-.team-member img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 0.5rem;
-}
-
-/* Products */
-.product {
-    margin-bottom: 1.5rem;
-}
-
-.product img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 0.5rem;
-}
-
-.product h3 {
-    font-size: 1.5rem;
-    color: #333;
-}
-.intro-text {
-    text-align: justify;
-}
-
+/* special screen */
 .specials-container {
     display: flex;
     flex-wrap: wrap;
@@ -620,6 +587,8 @@ h2 {
     background-color: #555;
 }
 
+/* for faq screen */
+
 .faq-container {
     max-width: 800px;
     margin: 30px auto;
@@ -661,173 +630,8 @@ h2 {
         font-size: 14px;
     }
 }
-.content-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px; /* Adjust spacing between elements */
-}
 
-.about-image {
-
-    object-fit: cover;
-    max-width: 40%;
-
-}
-
-.content-wrapper p {
-    
-    text-align: left;
-    color: #555;
-    font-size: 20.24px;
-}
-.about-container h1 {
-    color: #5ea299;
-}
-
-
-
-#trainid{
-    text-align: center;
-    color: #5ea299;
-}
-
-#trainp {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-/* Table Styles */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px auto;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-caption {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #5ea299;
-    text-transform: uppercase;
-    background-color: #ecf0f1;
-    padding: 10px;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-}
-
-th {
-    background-color: #5ea299;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1rem;
-}
-
-/* Alternate Row Colors */
-tbody tr:nth-child(odd) {
-    background-color: #f2f2f2;
-}
-
-tbody tr:nth-child(even) {
-    background-color: #ffffff;
-}
-
-/* Highlight Row on Hover */
-tbody tr:hover {
-    background-color: #dff9fb;
-    cursor: pointer;
-}
-
-
-/* Form Styles */
-#contact-form {
-    width: 70%;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-fieldset {
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-    padding: 25px;
-    border-radius: 5px;
-}
-
-legend {
-    font-weight: bold;
-    color: #5ea299;
-    font-size: 25px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input,textarea, select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-input:focus, textarea:focus, select:focus {
-    outline: none;
-    border-color: #3498db;
-    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
-}
-
-button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #3498db;
-    color: #fff;
-    font-size: 1rem;
-}
-
-button:hover {
-    background-color: #2980b9;
-}
-
-button[type="reset"] {
-    background-color: #e74c3c;
-}
-
-button[type="reset"]:hover {
-    background-color: #c0392b;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    #contact-form {
-        width: 90%;
-    }
-}
-
-input[type="radio"] {
-    margin-right: 10px; /* Adds space between radio buttons */
-    display: inline-block; /* Makes radio button appear inline */
-    width: 2%;
-}
-
-label[for="social-media"], 
-label[for="friend"], 
-label[for="advertisement"] {
-    display: inline-block; 
-}
+/* for media screen */
 
 .media-container {
     display: flex;

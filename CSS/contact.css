@@ -1,0 +1,85 @@
+/* for form in contact */
+
+/* Form Styles */
+#contact-form {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: bold;
+    color: #5ea299;
+    font-size: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button[type="reset"] {
+    background-color: #e74c3c;
+}
+
+button[type="reset"]:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #contact-form {
+        width: 90%;
+    }
+}
+
+input[type="radio"] {
+    margin-right: 10px; /* Adds space between radio buttons */
+    display: inline-block; /* Makes radio button appear inline */
+    width: 2%;
+}
+
+label[for="social-media"], 
+label[for="friend"], 
+label[for="advertisement"] {
+    display: inline-block; 
+}
