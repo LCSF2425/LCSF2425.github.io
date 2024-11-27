@@ -542,6 +542,8 @@ h2 {
     justify-content: center;
     gap: 20px;
     padding: 20px;
+    width: 100%;
+    box-sizing: border-box; 
 }
 
 .special-item {
@@ -586,6 +588,101 @@ h2 {
 .buy-now:hover {
     background-color: #555;
 }
+
+.product-of-the-week {
+    text-align: center;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.week-product-image {
+    max-width: 60%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-of-the-week p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.product-of-the-week h2 {
+    font-size: 28px;
+    color: #5ea299;
+    margin-bottom: 10px;
+}
+
+.customer-guarantee {
+    text-align: center;
+    background-color: #eef6f6;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.guarantee-image {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.customer-guarantee p {
+    font-size: 18px;
+    color: #444;
+}
+
+.customer-guarantee h2 {
+    font-size: 26px;
+    color: #5ea299;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .special-item {
+        width: 45%; /* Adjust width to fit two items per row */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .special-item {
+        width: 100%; /* Full width for smaller devices */
+    }
+}
+
+/* Section Intro Styling */
+.section-intro {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Optional: Add a subtle background color */
+    border-radius: 8px; /* Optional: Rounded edges */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+}
+
+.section-title {
+    font-size: 2em;
+    color: #5ea299;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+.section-description {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin: 0 auto;
+    font-family: 'Georgia', serif;
+    max-width: 800px; /* Restrict width for readability */
+}
+
 
 /* for faq screen */
 
