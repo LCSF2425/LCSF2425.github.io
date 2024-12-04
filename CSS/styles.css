@@ -71,6 +71,12 @@ nav li a {
     text-decoration: none;
 }
 
+nav ul li a.active {
+    text-decoration: underline;
+    text-decoration-color: #5ea299;
+    text-decoration-thickness: 3px;
+}
+
  /* Style rules for main content */ 
 main {
     background-color: #fff;
